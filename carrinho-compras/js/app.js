@@ -4,7 +4,7 @@ function adicionar() {
     let valorUnitario = produto.split('R$')[1];
     let quantidade = document.getElementById('quantidade').value;
     
-    let preco = quantidade.value * valorUnitario;
+    let preco = quantidade * valorUnitario;
     let carrinho = document.getElementById('lista-produtos');
 
     carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos__produto">
